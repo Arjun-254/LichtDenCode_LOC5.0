@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 export const SignUp = () => {
     const navigate = useNavigate()
     const[password,SetPassword]= useState()
+    const[fileSelect,setfileSelect] = useState("")
      return (
     <div>
         <Landing/>
@@ -30,11 +31,11 @@ export const SignUp = () => {
         <form className="row g-3">
         <div className="col-md-6">
     <label for="inputEmail4" className="flex form-label text-white">First Name:</label>
-    <input type="email" className="form-control bg-violet-200" id="inputFirstName4" onChange={(e)=>{localStorage.setItem('Fname',e.target.value)}}/>
+    <input type="text" className="form-control bg-violet-200" id="inputFirstName4" onChange={(e)=>{localStorage.setItem('Fname',e.target.value)}}/>
   </div>
   <div className="col-md-6">
     <label for="inputPassword4" className="form-label flex text-white">Last Name:</label>
-    <input type="password" className="form-control bg-violet-200" id="inputLastName4" onChange={(e)=>{localStorage.setItem('Lname',e.target.value)}}/>
+    <input type="text" className="form-control bg-violet-200" id="inputLastName4" onChange={(e)=>{localStorage.setItem('Lname',e.target.value)}}/>
   </div>
   <div className="col-md-6">
     <label for="inputEmail4" className="flex form-label text-white">Email:</label>
@@ -69,7 +70,7 @@ export const SignUp = () => {
   </div>
   <div class="mb-3">
   <label for="formFile" className="form-label flex text-white">Input your file: </label>
-  <input className="form-control bg-violet-200" type="file" id="formFile" />
+  <input className="form-control bg-violet-200" type="file" id="formFile" onChange={(e)=>{localStorage.setItem('file',e.target.value)}}/>
 </div>
   <div className="col-12 mt-8">
     <button type="submit" className="btn text-white hover:bg-violet-800 bg-violet-600 border-violet-600">Sign in</button>

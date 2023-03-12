@@ -18,6 +18,8 @@ import NavbarLOC from './components/NavbarLOC'
 import Slide1 from './components/Slide1'
 import { Dashboard } from "./pages/Dashboard";
 import { Sidebar } from "./components/Sidebar";
+import { AboutUs } from "./pages/AboutUs";
+import { FAQ } from "./pages/FAQ";
 
 
 function App() {
@@ -34,6 +36,12 @@ function App() {
       <Route path="/register2" element={<SignUp2 />} />
 
       <Route path="/dashboard" element={<Dashboard />} />
+
+      <Route path="/about" element={<AboutUs/>} />
+
+      <Route path="/faq" element={<FAQ/>} />
+
+
 
 
     

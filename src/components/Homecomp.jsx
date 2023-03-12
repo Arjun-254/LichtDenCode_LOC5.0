@@ -3,13 +3,15 @@
 //import MyComponent from './Captcha';
 import ReCAPTCHA from 'react-google-recaptcha';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 
  const Home = () => {
-
+    const navigate=useNavigate()
      const [name, setName] = useState('')
      const [email, setEmail] = useState('');
      const handleSubmit=(e)=>{
+
         e.preventDefault();
         const imageSrc=localStorage.getItem('image')
         const formData = new FormData();
@@ -21,7 +23,7 @@ import axios from 'axios';
         axios.post("http://127.0.0.1:5000/signup",formData,{headers: {
             'content-type': 'multipart/form-data'
         }}).then(res=>{console.log(res)}).catch(err=>{})
-       
+    navigate("/dashboard")
     }
     
 
@@ -38,7 +40,7 @@ import axios from 'axios';
          <div className="home-container mx-auto col-md-6">
              <div className="container">
                  <div className="text-white">
-                     <h1 className='mb-3 text-lg'>Please capture a clear, well lit image of your full face.</h1>
+                     <h1 className='mb-3 text-lg'>Please take an image of your face</h1>
                      <form className="form">
                          <WebcamCapture/>
                          {/* <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />

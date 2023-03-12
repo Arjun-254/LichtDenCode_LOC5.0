@@ -7,6 +7,7 @@ import { BsPersonVcardFill,BsFillHeartPulseFill } from "react-icons/bs";
 import { BiTachometer } from "react-icons/bi";
 import { RiskScore } from '../components/RiskScore'
 import { HealthData } from '../components/HealthData'
+import Gauge from '../components/Gauge'
 
 export const Dashboard = () => {
   const[selectDash,setSelectDash] = useState("")
@@ -15,7 +16,7 @@ export const Dashboard = () => {
       case "YourProfile":
         return <YourProfile />;
       case "RiskScore":
-        return <RiskScore />;
+        return <Gauge />;
       case "HealthData":
         return <HealthData />;
       default:

@@ -12,20 +12,20 @@ import Webcam from "react-webcam";
  };
 
  export const WebcamCapture = () => {
+    const [id,setId]= useState(1)
 
      const [image,setImage]=useState('');
      const webcamRef = React.useRef(null);
 
 
-     const capture = React.useCallback(
-         () => {
-         const imageSrc = webcamRef.current.getScreenshot();
-         setImage(imageSrc)
-         
-         
-         localStorage.setItem('image',imageSrc)
-     
-         });
+     const capture = React.useCallback(() => {
+        const imageSrc = webcamRef.current.getScreenshot();
+        setImage(imageSrc);
+        setId(prevId => prevId + 1);
+        console.log(id);
+        localStorage.setItem(`image${id}`, imageSrc);
+      });
+      
      return (
          <div className="webcam-container ">
              <div className="webcam-img flex justify-center">

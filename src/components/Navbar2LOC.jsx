@@ -25,12 +25,9 @@ export default function NavbarLOC() {
         <div className=" justify-center text-center lg:flex lg:gap-x-12 align-middle">
             <a href="#" className="text-sm font-semibold leading-6 text-gray-200 hover:font-extrabold hover:shadow-xl transition-all ease-in duration-100 p-2 rounded-lg" onClick={()=>{navigate("/")}}>Home</a>
 
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-200 hover:font-extrabold hover:shadow-xl transition-all ease-in duration-100 p-2 rounded-lg">Find Jobs</a>
+            <a href="#" className="text-md font-semibold leading-6 text-gray-200 hover:font-extrabold hover:shadow-xl transition-all ease-in duration-100 p-2 rounded-lg" onClick={()=>{navigate("/faq")}}>FAQs</a> 
 
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-200 hover:font-extrabold hover:shadow-xl transition-all ease-in duration-100 p-2 rounded-lg">Employers</a>
-
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-200 hover:font-extrabold hover:shadow-xl transition-all ease-in duration-100 p-2 rounded-lg">About</a>
-        </div>
+            <a href="#" className="text-md font-semibold leading-6 text-gray-200 hover:font-extrabold hover:shadow-xl transition-all ease-in duration-100 p-2 rounded-lg" onClick={()=>{navigate("/about")}}>About Us</a>   </div>
         {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className="text-sm font-semibold leading-6 text-gray-200 mr-2 p-2 hover:bg-violet-600 rounded-md transition-all duration-500 ease-in-out border-2 border-violet-600" >Sign Up <span aria-hidden="true"></span></a>
             <a href="#" className="text-sm font-semibold leading-6 text-gray-200 p-2 hover:bg-violet-600 rounded-md transition-all duration-500 ease-in-out border-2  border-violet-600" onClick={()=>{navigate("/login")}}>Log in <span aria-hidden="true">&rarr;</span></a>
@@ -58,12 +55,10 @@ export default function NavbarLOC() {
                 <div className="space-y-2 py-6">
                 <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-200 hover:font-extrabold hover:shadow-xl transition-all ease-in duration-100 p-2 bg-gradient-to-r from-grey-600 to-grey-900" onClick={()=>{navigate("/")}}>Home</a>
 
-                <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-200 hover:font-extrabold hover:shadow-xl transition-all ease-in duration-100 p-2 bg-gradient-to-r from-grey-600 to-grey-900">Find Jobs</a>
+                <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-200 hover:font-extrabold hover:shadow-xl transition-all ease-in duration-100 p-2 bg-gradient-to-r from-grey-600 to-grey-900" onClick={()=>{navigate("/faq")}}>FAQs</a>
 
-                <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-200 hover:font-extrabold hover:shadow-xl transition-all ease-in duration-100 p-2 bg-gradient-to-r from-grey-600 to-grey-900">Employers</a>
-
-                <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-200 hover:font-extrabold hover:shadow-xl transition-all ease-in duration-100 p-2 bg-gradient-to-r from-grey-600 to-grey-900">About Us</a>
-                </div>
+                <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-200 hover:font-extrabold hover:shadow-xl transition-all ease-in duration-100 p-2 bg-gradient-to-r from-grey-600 to-grey-900" onClick={()=>{navigate("/about")}}>About Us</a>
+               </div>
                 {/* <div className="py-6">
                 <a href="#" className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-200 hover:font-extrabold hover:shadow-xl transition-all ease-in duration-100 p-2 bg-gradient-to-r from-grey-600 to-grey-900'">Log In</a>
 
