@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
+import image from "./image1.png";
 
 export default function NavbarLOC() {
     const navigate = useNavigate()
@@ -11,7 +12,7 @@ export default function NavbarLOC() {
         <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+            <img className="h-8 w-auto" src={image} alt="" />
             </a>
         </div>
         <div className="flex lg:hidden">
@@ -41,7 +42,7 @@ export default function NavbarLOC() {
             <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+                <img className="h-8 w-auto" src={image} alt="" />
             </a>
             <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700">
                 <span className="sr-only">Close menu</span>
